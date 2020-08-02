@@ -107,7 +107,7 @@ Although the problem statement of Meander hit home immediately, for now I am con
 
 
 Why I don't like the word 'coding' and why I don't like the 'coding' interviews I see on YouTube;
-or: the difference and relations between computer science, coding, programming and software engineering.
+and: the difference and relations between computer science, coding, programming and software engineering.
 Comment on 'Google coding interview'.
 "makes me want to give up coding".
 He was asking CS questions, not coding questions!
@@ -115,3 +115,11 @@ Programming is the combination of computer science AND coding.
 Need both: educate yourself!
 coding is an implementation detail (see some other blog post)
 Software engineering is yet another thing. About ethics, best practises and disciplines.
+
+
+
+
+
+
+
+'Old school' vs. 'new school' functional programming; and: functional programming is a bad name.
