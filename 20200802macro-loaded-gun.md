@@ -25,7 +25,7 @@ add5 = a => 5 + a
 add5(4) // => 9
 ```
 
-Clojure even has a core function `clojure.core/partial` to perform partial application:
+Clojure even has a core function `clojure.core/partial` to perform partial application. However, as we will see later in this blog post, calling `partial` significantly differs from the using the function literals `(fn ...)` and `#(...)`.
 
 ```clojure
 (defn partial ; *
@@ -52,7 +52,7 @@ add5(4) // => 9
 
 ** Because in JavaScript + is not a function but an operator, it can't be used as a function by itself.
 
-However, as we will see later in this blog post, calling `partial` significantly differs from the using the function literals `(fn ...)` and `#(...)`.
+
 
 ```clojure
 (defmacro -# [& fn-call] `(fn [] (~@fn-call)))
