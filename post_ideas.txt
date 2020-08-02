@@ -1,0 +1,66 @@
+Learning to leap over the pitfall of premature implemetation details.
+
+duplicates vs reoccurrences
+Not about the elements themselves, but their occurrences
+what made me realize this is oac/2016/1/2
+if wanted to implement as duplicates, could not be lazy...
+unless I would break what I would expect from the function.
+Made me realize duplicates was improper abstraction! Too specific! Premature implementation detail!
+Why does it matter though?
+
+
+
+
+
+
+overcoming the imperative-declarative ambuiguity of English
+= always imperative, start name with -> to 'cheat out' a declarative name
+
+
+
+
+
+The rationale of Uncle Bob's "three lines per function" rule and the two uses of a name.
+uses of a name:
+- to summarize meaning
+- to provide a context for an implementation
+
+I came to realize the second use of a name by this example
+<< see cfn/assets, bottom few functions >>
+
+Uncle Bob's "three lines per function" rule supports understandability through brevity.
+Minimal irrelevant details = maximal abstraction.
+The abstraction is achieved by names.
+However,
+- These names need not be functions, but can be values also;
+- These names need not be introduced outside function scope; let block can be fine.
+
+
+
+
+
+
+Why programming is useful and why I love it so much; or: software is an implementation detail.
+
+externalization
+
+Bonus: I love Clojure so much because to me expressing myself in it feels most natural of all programming languages.
+
+
+
+
+
+What's the benefit of simplicity?
+
+Problem -> solution -> implementation -> test
+
+An implementation is simple when it straightforwardly maps to the problem.
+
+Keeping things simple will allow us realize if what we're doing is actually what we're supposed to be doing.
+
+Being simple is about minimalism; unburden mind as much as possible to we can think of relevant things.
+
+
+
+
+
