@@ -132,6 +132,10 @@ Engineering is what work is; you get the opportunity to learn on the job.
 On an engineering job, don't get the oppornity; if you do, it's not often.
 I learned a lot about engineering (functional programming, stratified design, clean code, clean architecture, the tools, the practises).
 
+example: state machines; non-uni guy started building, spent days debugging something.
+I took a look, after 30 minutes spotted a potential deadlock.
+During meeting could rebuff a complaint about adding an empty thing to db for each other thing; that would be O(N+1) per thing instead of O(N); no biggie.
+
 
 
 
