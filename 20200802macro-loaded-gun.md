@@ -14,17 +14,16 @@ Partial application is creating a function by providing some arguments to a func
 
 ```clojure
 (def  add-5 (fn [a] (+ 5 a)))
-(def  add-5 #(+ 5 %)) ; *
+(def  add-5 #(+ 5 %))
 
 (add-5 4) ; => 9
 ```
 ```javascript
 add5 = function(a) { return 5 + a }
-add5 = a => 5 + a // *
+add5 = a => 5 + a
 
 add5(4) // => 9
 ```
-* Note that declaring global variables with the same name multiple times would give an error in both languages.
 
 Clojure even has a core function `clojure.core/partial` to perform partial application:
 
@@ -49,7 +48,8 @@ add5 = partial(add, 5)
 
 add5(4) // => 9
 ```
-* I shortened the actual implementation of `partial` for brevity.
+\* I shortened the actual implementation of `partial` for brevity.
+
 ** Because in JavaScript + is not a function but an operator, it can't be used as a function.
 
 However, as we will see later in this blog post, calling `partial` significantly differs from the using the function literals `(fn ...)` and `#(...)`.
