@@ -107,7 +107,7 @@ Although the problem statement of Meander hit home immediately, for now I am con
 
 
 Why I don't like the word 'coding' and why I don't like the 'coding' interviews I see on YouTube;
-and: the difference and relations between computer science, coding, programming and software engineering.
+and: the difference and relations between computer science, coding, programming and software engineering
 Comment on 'Google coding interview'.
 "makes me want to give up coding".
 He was asking CS questions, not coding questions!
@@ -116,6 +116,21 @@ Need both: educate yourself!
 coding is an implementation detail (see some other blog post)
 Software engineering is programming and much more. About ethics, best practises and disciplines.
 
+
+
+
+
+
+why a theoretical computer science education is very worthwhile for a software engineering job.
+
+At work, people from university not taken seriously because they can't do anything.
+In general: true.
+At uni don't learn much practical stuff. Never touched a version control system. Never touched a terminal.
+Spent years developing insights on stuff like time complexity, something which during my engineering job only rarely is relevant knowledge.
+However, had the opportunity to spend years developing insights;
+Engineering is what work is; you get the opportunity to learn on the job.
+On an engineering job, don't get the oppornity; if you do, it's not often.
+I learned a lot about engineering (functional programming, stratified design, clean code, clean architecture, the tools, the practises).
 
 
 
