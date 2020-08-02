@@ -77,3 +77,8 @@ Juggle the (non) use of threading macro's to increase storytelling.
 Why for most people 'real world' programming languages are bad tools to learn programming.
 designed for productivity (are conventient) and performance (provide many options that are similar but different).
 Thus they have much implicit and irregular behavior and have irregular syntax.
+
+
+
+
+Analyzing clojure core functions with a clojure program.
