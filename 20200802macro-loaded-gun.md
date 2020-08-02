@@ -12,13 +12,13 @@ I wrote a macro that lets me arbitrarily deeply nest loaded guns.
 
 Partial application is creating a function by providing some arguments to a function call. In the example below, `add-5` is a function obtained by partially applying arguments to a call to `+`. Although in javascript + is not a function but an operator, the idea stays the same. The duplicate global variables are there to showcase the different function literals.
 
-```clojure
+```clojure {.line-numbers}
 (def  add-5 (fn [a] (+ 5 a)))
 (def  add-5 #(+ 5 %))
 
 (add-5 4) ; => 9
 ```
-```javascript
+```javascript {.line-numbers}
 add5 = function(a) { return 5 + a }
 add5 = a => 5 + a
 
@@ -27,7 +27,7 @@ add5(4) // => 9
 
 Clojure even has a core function `clojure.core/partial` to perform partial application. However, as we will see later in this blog post, calling `partial` significantly differs from the using the function literals `(fn ...)` and `#(...)`.
 
-```clojure
+```clojure {.line-numbers}
 (defn partial ; *
   "Takes a function f and fewer than the normal arguments to f, and
   returns a fn that takes a variable number of additional args. When
@@ -39,7 +39,7 @@ Clojure even has a core function `clojure.core/partial` to perform partial appli
 
 (add-5 4) ; => 9
 ```
-```javascript
+```javascript {.line-numbers}
 partial = (f, ...some_args) => (...more_args) => f.apply(null, some_args.concat(more_args))
 
 add = (a, b) => a + b // **
@@ -54,6 +54,6 @@ add5(4) // => 9
 
 
 
-```clojure
+```clojure {.line-numbers}
 (defmacro -# [& fn-call] `(fn [] (~@fn-call)))
 ```
