@@ -63,4 +63,8 @@ Being simple is about minimalism; unburden mind as much as possible to we can th
 
 
 
+Optimizing a program writeup for storytelling and why I don't like space-dictated syntax such as Python's.
 
+use spacing to make reader aware of things.
+
+Juggle the (non) use of threading macro's to increase storytelling.
