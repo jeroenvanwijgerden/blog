@@ -52,7 +52,7 @@ Bonus: I love Clojure so much because to me expressing myself in it feels most n
 
 What's the benefit of simplicity?
 
-Problem -> solution -> implementation -> test
+problem -> perceived problem -> solution -> implementation -> test
 
 An implementation is simple when it straightforwardly maps to the problem.
 
@@ -63,8 +63,17 @@ Being simple is about minimalism; unburden mind as much as possible to we can th
 
 
 
-Optimizing a program writeup for storytelling and why I don't like space-dictated syntax such as Python's.
+Optimizing code for storytelling and why I don't like space-dictated syntax such as Python's.
 
 use spacing to make reader aware of things.
 
 Juggle the (non) use of threading macro's to increase storytelling.
+
+
+
+
+
+
+Why for most people 'real world' programming languages are bad tools to learn programming.
+designed for productivity (are conventient) and performance (provide many options that are similar but different).
+Thus they have much implicit and irregular behavior and have irregular syntax.
