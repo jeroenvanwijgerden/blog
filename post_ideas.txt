@@ -81,4 +81,22 @@ Thus they have much implicit and irregular behavior and have irregular syntax.
 
 
 
+
+
+
 Analyzing clojure core functions with a clojure program.
+
+
+
+
+
+
+A dream of declarative data transformations.
+Meander
+looked in syntax, quickly boggled...
+Makes sense: higher level stuff, can express more... if you want all that expressivity 'first class', language needs to be bigger.
+Same as chinese vs english.
+Chinese has many characters, each representing a thing. English few characters, but can easily compose with knowing little.
+
+Get the same feeling with meander; to makes clear there is a limit in how abstract/expressive a _general programming language_ can or should be.
+Although the problem statement of Meander hit home immediately, for now I am content with keeping my toolkit mentally managable at the cost of expressivity.
