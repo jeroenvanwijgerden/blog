@@ -50,7 +50,7 @@ add5(4) // => 9
 ```
 \* I shortened the actual implementation of `partial` for brevity.
 
-** Because in JavaScript + is not a function but an operator, it can't be used as a function.
+** Because in JavaScript + is not a function but an operator, it can't be used as a function by itself.
 
 However, as we will see later in this blog post, calling `partial` significantly differs from the using the function literals `(fn ...)` and `#(...)`.
 
