@@ -114,7 +114,7 @@ He was asking CS questions, not coding questions!
 Programming is the combination of computer science AND coding.
 Need both: educate yourself!
 coding is an implementation detail (see some other blog post)
-Software engineering is yet another thing. About ethics, best practises and disciplines.
+Software engineering is programming and much more. About ethics, best practises and disciplines.
 
 
 
