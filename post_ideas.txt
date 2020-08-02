@@ -142,3 +142,14 @@ During meeting could rebuff a complaint about adding an empty thing to db for ea
 
 
 'Old school' vs. 'new school' functional programming; and: functional programming is a bad name.
+
+
+
+
+
+Writing detailed explanations of my opinions; a programming exercise.
+
+started with merge requests.
+Made me wonder: stuff that's 'ugly'; are there 'universal rules' for beauty?
+such as: narrow scope of data asap.
+equal names equal semantics.
