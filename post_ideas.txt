@@ -158,7 +158,7 @@ equal names equal semantics.
 
 
 
-The very act of writing a program is in the spirit of functional programming.
+The act of writing any program is itself in the spirit of functional programming.
 seperating plan from action
 e.g. what needs to be drawn to drawing it.
 Tellman's Always Be Composing; data more composable/maleable.
