@@ -153,3 +153,15 @@ started with merge requests.
 Made me wonder: stuff that's 'ugly'; are there 'universal rules' for beauty?
 such as: narrow scope of data asap.
 equal names equal semantics.
+
+
+
+
+
+
+seperating plan from action
+e.g. what needs to be drawn to drawing it.
+Tellman's Always Be Composing; data more composable/maleable.
+Normand: clearly distinguishing data, calculating, action
+writing a program is exactly that!
+seperating the plan from action allows compiler to do smart things, allows humans to reason about the plan without any action having to take place.
