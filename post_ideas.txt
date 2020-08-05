@@ -123,6 +123,8 @@ Software engineering is programming and much more. About ethics, best practises 
 
 why a theoretical computer science education is very worthwhile for a software engineering job.
 
+The advantage theory has over practise is that theory is less restricted. Don't have to wait for things to happen, don't have to physically/actually perform steps. Theory allows for focus and deliberate practise of a particular aspect. However, practise is vital (application must be trained as well. So what's a good ratio? Depends on the person; I would say at least 50% theory.
+
 At work, people from university not taken seriously because they can't do anything.
 In general: true.
 At uni don't learn much practical stuff. Never touched a version control system. Never touched a terminal.
