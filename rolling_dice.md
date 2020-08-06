@@ -68,3 +68,38 @@
 (prh (with-advantage (multiple (repeat 4 (roll-fn 20)))) 1e6)
 (prh (with-advantage (multiple (repeat 2 (with-advantage (roll-fn 6))))) 1e6)
 ```
+```
+(defmulti value ffirst)
+
+(defmethod value :roll
+  [[_ v :as p]]
+  [p v])
+
+(defmethod value :with-advantage
+  [[_ a b :as p]]
+  [p (max (second (value a)) (second (value b)))])
+
+(defmulti perform first)
+
+(defmethod perform :roll
+  [[_ n :as r]]
+  [r (inc (rand-int n))])
+
+(defmethod perform :with-advantage
+  [[_ f :as r]]
+  [r (perform f) (perform f)])
+
+(defn roll [n]
+  [:roll n])
+
+(defn with-advantage [f]
+  [:with-advantage f])
+
+(defn multiple [fs]
+  [:multiple fs])
+
+(value (perform (roll 6)))
+(value [[:roll 6] 5])
+
+(value (perform (with-advantage (with-advantage (roll 10)))))
+```
