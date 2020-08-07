@@ -103,3 +103,26 @@
 
 (value (perform (with-advantage (with-advantage (roll 10)))))
 ```
+```
+(defn roll-fn [n]
+  [[:roll n]
+   (fn [] [[:roll n]
+           (inc (rand-int n))])])
+
+(defn with-advantage [rfn]
+  [[:with-advantage rfn]
+   (fn [] (let [r1 ((second rfn))
+                r2 ((second rfn))]
+            [[:with-advantage r1 r2]
+             (max (second r1) (second r2))]))])
+
+(defn multiple [rfns]
+  [[:multiple rfns]
+   (fn [] (let [rs (map (comp #(%) second) rfns)]
+            [[:multiple rs]
+             (reduce + (map second rs))]))])
+
+((second (roll-fn 6)))
+((second (with-advantage (roll-fn 6))))
+((second (multiple (repeat 2 (with-advantage (roll-fn 6))))))
+```
