@@ -126,3 +126,31 @@
 ((second (with-advantage (roll-fn 6))))
 ((second (multiple (repeat 2 (with-advantage (roll-fn 6))))))
 ```
+multimethod vs fns
+with fns, the data is cluttered (contains fn objects)
+with multimethod, a way to seperately look at a performance (the result of rolling).
+value really is just a way to interpret the performance. Could have multiple ways of interpreting some data.
+the value multimethod could be called numerical-value.
+for instance, in yathzee.
+
+by splitting up in roll (way or rolling), performance (result of a way of rolling) and evaluation, can do multiple/different evaluations of same performance.
+could even refactor with-advantage and with-disadvantage to have the same way of rolling/performance and only have eveluation differ.
+
+the top level function is then a composition of these three. In case of with-advantage, way of rolling is provided. There is a single way to go from a way of rolling
+to a performance, although a single way of rolling might yield different performance (random result from die). If that is true, then why not have the way of rolling as a fn?
+Because difficult to analyze/represent a fn...
+A way of rolling has a single performance
+THIS IS AN EXAMPLE OF SPLITTING PLAN AND ACTION!
+
+Settler of Catan: Cities and Knights.
+Single roll performance, multiple evaluations!
+1) Check special die. Ship or castle? (note, special die has no numerical value! simply don't ccreate a defmethod for special die
+1b) if special die was castle, evaluate red die
+2) evaluate white and red die
+
+How to deal with 'choose what red die will be'?
+Create a new way of rolling: fixed, which returns a fixed value.
+Then (performance (multiple [white red-fixed special])).
+For graphics, create defmethod roll :sided-die which takes let's say a vec of values. Performance of such a roll is [side value].
+
+
