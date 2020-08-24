@@ -294,3 +294,20 @@ The bad thing about literature is that it's written by authors.
 - interesting what happens when a new person with fresh perspective has a go
 - that movie about time travel
 - programming cell simulation with my brother
+
+
+
+
+
+
+
+
+
+
+Benefits of Digging Deep
+- benefits of reflection / retrospectives
+- refer to post on spirituality
+- programming: ugly code: why is it ugly? can we come to a deeper understanding, formulate some rules (of thumb).
+  - by making it formalized rules, we reap the befenits of externalizing (refer to post)
+  - narrow scope of data
+  - one meaning per word
