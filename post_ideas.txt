@@ -249,6 +249,19 @@ Collecting perspectives.
     
 Programming for the general population
 - rather: non-specialists
+- why?
+  - 'great independence & means of artistic self-expression'
+  
+  - my thesis: process many excel sheets...
+  - even simple regex stuff: from phone records, get me all unique phone numbers.
+  - or regexy stuff: in document, replace a group within a match with something else...
+  - calculuate, simulate...
+  - jobs: sales people need sql skills... 
+    - not only are DSLs sometimes not present, sometimes general programming is useful (cut out image, find phone numbers...)
+  - I see all the options because I am an expert...
+  - rise of 'data science'
+    - many acquitances who studied whatever have 'data scientist' as job title
+    - rather: rise of much information that needs processing.
 - stone tables & chisels -> parchment & ink -> post-it and pen
 - for programming, currently we're in the parchment & ink phase
 - what will our post-it and pen equivalent be?
