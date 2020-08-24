@@ -1,3 +1,7 @@
+some tags for blog posts:
+vision, programming, education, lifestyle
+
+
 Learning to leap over the pitfall of premature implemetation details.
 
 duplicates vs reoccurrences
@@ -246,7 +250,7 @@ Collecting perspectives.
     
     
     
-    
+#vision #programming    
 Programming for the general population
 - rather: non-specialists
 - why?
