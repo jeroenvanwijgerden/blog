@@ -215,14 +215,17 @@ The Last Argument of Kings
 
 
 
-The Name of the Wind
+The Name of the Wind. Or: Musing on Names
 - theme in fantasy: power of names
-  - name of the wind
-  - lies of locke lamora
+  - name of the wind ; much understanding yields you the true name of something
+  - lies of locke lamora ; true name of something yields control
   - maybe farseer?
   - can remember vaguely if you know the name of a creature, you control it. look this up.
 - words are a summary of a vast bank of understanding
   - communicators, teachers, be aware of this! Refer to On Communication: always interpret your data roleplaying as your audience.
+- naming is common theme in programming
+  - talk about (maybe separate blog post) on renaming adventures in the assets ns of cfn service)
+    - realization: names do not only summarize, but also provide context / set a mood / set expectations.
   
   
   
