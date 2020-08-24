@@ -268,6 +268,10 @@ Programming for the general population
 - programming is very useful but don't need all this high grade stuff.
 - even within professional software engineering; don't always need cloud hosting... just a server to run it.
 - future of programming: there is a very stable, easy to use, accessible language for general use. Or at least, multiple.
+- like writing: no, we don't need it. 100 years ago most people couldn't write.
+  - it does improve our lives.
+  - 'knowledge economy'; stay competittive!
+  - even if globally we don't and you're a rando reading this: give yourself an edge, learn how to program.
 - what do we need for this?
   - a common data format
   - ...
