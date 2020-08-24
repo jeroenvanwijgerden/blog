@@ -275,6 +275,10 @@ Programming for the general population
 - what do we need for this?
   - a common data format
   - ...
+- what are some 'post-it+pen' equivalents for programming?
+- dice rolling in risk
+- monty hall
+- phone numbers
 
 
 
