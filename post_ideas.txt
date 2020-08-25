@@ -290,7 +290,13 @@ both education wise (refer to blog post on why programming education is bad atm)
   - drag and drop
   - example: kosmos clojure graphical
 - maybe two languages for gen pop: one is slightly more powerful
-
+- tiers of literacy: speech, writing, programming
+  - increasingly: requires more resources / infrastructure, slowness, power, applicability
+  - in the past: writing not worth the investment to learn, cost of resources greater than gain.
+    - nowadays, paper and pens everywhere.
+    - within a tier, still different levels: professional writers use slow, maintenance heavy tools (computers, LaTeX).
+    - even computers are commodity nowadays. Was not the case with typewriters even, 40 years ago.
+   - now we write (and read) a lot. Interesting; we program little, but do consume programs ('read') them all the flipping time. Perhaps as much
 
 
 
