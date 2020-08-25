@@ -285,6 +285,13 @@ Programming for the general population
 - conclusion: programming benefits the general population but the tools are not suitable to be used by the general population.
 both education wise (refer to blog post on why programming education is bad atm) and eventual usage. for eventual usage: takes long to learn, much effort to use
 (deploy, especially).
+- easily accessible, quick to start using
+  - installed on every phone / computer by default
+  - drag and drop
+  - example: kosmos clojure graphical
+- maybe two languages for gen pop: one is slightly more powerful
+
+
 
 
 
