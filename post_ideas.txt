@@ -391,3 +391,9 @@ So my original thought can be 'fixed' by saying the steps should be larger.
 Difference with generative algorithms is that currently we can't automate these steps yet, require too much human intelligence.
 If we ever get AI to a point where they can do TDD, we are a step closer to automating software.
 Interesting(?)
+
+
+
+
+
+separation of entity and identity
