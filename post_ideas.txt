@@ -306,6 +306,7 @@ both education wise (refer to blog post on why programming education is bad atm)
 
 about programming on vwo: would be a base skill, next to language, mathematics, learning, teamwork.
 programming sits is a corner similar to mathematics. About that... many maths students have trouble seeing the structure in an equation, find it difficult to recognize the patterns that allows them to use axioms. Perhaps a new notation, similar to my approach to seeing structure in instructions? More of a tree structure, semi graphical. What would that look like?
+pretty much an AST. Perhaps same issue: mathematical notation is too convenient for some students; they first need an equally powerful but less convenient yet more understandable language / notation.
 
 
 
