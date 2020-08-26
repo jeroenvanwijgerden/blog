@@ -397,3 +397,88 @@ Interesting(?)
 
 
 separation of entity and identity
+
+
+
+
+
+design of this blog:
+initially, important to be free
+easy to update
+but, want comments!
+writing is great (ref: externalization) but feedback / responses take it to the next level.
+github pages easy to use, but is static...
+comments as a microservice!
+benefits:
+content stays easy to use, fast & stable (github hosted)
+comments are 'dynamic content'; requires more smart stuff to happen (e.g. database).
+
+don't want spam and also gives some humanity to the messages... so, authentication.
+ux wise, threshold should be low (please comment, I want to know your thoughts!).
+and don't want to implement account management... OAuth!
+GitHub, Google, Reddit, Twitter.
+
+functional requirements: user can claim an authenticated identity, use this identity to place a comment.
+comments are sorted in time.
+can edit and delete comment after creation. => need to store identity and identity authenticator.
+can 'reply' to a comment, breaking the relation between order of appearance and time of creation.
+this throws a small wrench in deleting comments... solution: soft delete (remove all personal data and content from comment, just keep it as a placeholder: "there used to be a comment here").
+
+Initial idea was to only persist user information in the form of identity and identity authenticator;
+front end can fetch more details (github.com/user/bla, reddit.com/user/bla).
+However, when implementing google, found out you can't do this; can only fetch personal info if you are authorized.
+So, will have to store name and profile picture as well.
+Perhaps nicer, even... ref: seperation entity identity.
+When you posted under a previous name with a previous picture, that was under a certain identity. Identity is more htan just a username or identifying number in some authorizer's database. The data that represents your identity for the authenticator is not the identity you posted with: that identity is decided also by name and picture.
+So, this issue gave me a new perspective and I like it.
+
+I want a thin backend, but security wise, anything can be posted...
+who posted commented, to what article, what was the comment.
+who (name) posted: anything can be sent to backend... so instead of doing that, backend will use access token to fetch details.
+flow: front end creates request token, send its to backend, backend creates access token (by also providing the client secret; which fits nicely with trying to keep the secret a secret; can't create access token in front end), but back end DOES NOT CARE ABOUT SESSION MANAGEMENT.
+instead, backend passes access token back to front end. Front end can at some later point pass any access token to back end, which back end will use to fetch identity details.
+My initial thought was: security leak. And sure; backend signs a token with client secret (tied to my personal accounts, yikes), which it then exposes to the big bad world. Anyone can now use that access token with my personal signature on it to do whatever.
+However, that's where token scope comes in handy. Before user grants permission, it is known what the power of the access token will be: what data it will have access to and which actions it can perform.
+The scope for my case is very minimal; just read some data. I can accept that anyone else can also read that data.
+But can I accept that?
+User gave ME permission to read, they trust ME. I don't want to break that trust by then virtually giving that permission to everyone in the world.
+
+Great example again of ref: externaliation!
+
+So then what? Keep access token hidden in back end. But, need some link between front end and back end, so that front end can tell me which token to use.
+That would mean any baddy also has access to that link; baddies can still use (by proxy) that access token. However, scope of use of that access token is now limited. Intead of doing whatever the scope granted by the authorizer allows, scope is now narrowed to whatever my backend offers in terms of functionality:
+posting a comment to an article on my website. Although the scope of the access token is now even narrower, still some information bleeds through: the name and profile picture. (because backend uses access token to fetch these, which were otherwise inaccessible, maybe).
+So the question is: would the access token be able to retrieve any data that is otherwise not publically accessible?
+For GitHub and Reddit the answers would be: no.
+However, for Google it's yes. Although name and pic bleed through, id and locale (are part of the data accessible by token but) are not bled trough.
+Who cares? I care. Trust is a precious gift. Besides, in the future (although I do not expect this, but who knows), more data might be contained in that authorized-locked request to Google. So, I must.
+On the other hand... access token will only live in their browser and connections are secure (https). People also, at some point, have their bank account password inside their browser (when you type it in). So, no proxy token! just pass back the access token to FE, at some point expect an access token to use to sign the comment with.
+
+Then maybe move the flow to backend entirely? Front end will have perspective: a few buttons with which to log in; when pressed, post to backend. Backend starts login flow. But how do I communicate back to front end that flow is complete...? FE waiting on response could time out, not nice. FE is static... Sockets way too complicated... Requesting the request token is fine on the front end; callback url will be front end, so no need to wait on anything.
+So at some point FE receives a request token. Sends this to BE, who will convert it to access token. BE send back a proxy for the access token; proxy token? Can then as well send name, so user sees the guise they will be commenting under. So what about session management? BE knows when token will expire. Can set a timeout for that to remove token. Not going to do refresh flow for now; just log in again. Perhaps even nicer to have a max lifetime on server as well, in case auth token is very long; let's say 2 hours. So set timeout (min max-lifetime token-lifetime) to remove mapping proxy token -> access token; if front end tries to do anything with proxy token after that, they will get a response like 'unrecognized proxy token' and it can inform the user they need to log in again.
+
+nice subdomain: comment.jeroenvanwijgerden.me
+deployed on heroku (free!, might have start up time, but doesnt matter because not the comments but the articles are the main feature of website).
+
+
+Comments thing doesn't have access to any db contaning articles. Besides, articles aren't even stored in a db (static website).
+So, generate a uuid for each of your articles and don't change it over commits.
+Mallory's could send fake comments to backend; ones that do not belong to an actually existing article.
+That fills up the db...
+but won't pollute visible articles anymore than the mallory's just deliberately spamming on a 
+
+On the topic of spam: let's add a timeout per user to post. Should be so that humans are discouraged to spam, bots can't spam, behaving users are not punished.
+I think 1 minute is reasonable... if you make a mistake, you can always edit without a timeout. Let's make that configurable.
+
+Also configurable: with oauth providers. They use different ways (some bearer token, some client_secret param...), so come up with a clever enough config scheme.
+
+To start using this comment service:
+get client ids/secrets for any oauth authorizer you want (GitHub, Google, Reddit, Twitter, ...).
+clone/form the repo.
+deploy with env vars set, attach a db.
+
+in your FE:
+give each article a uuid
+include a login thing
+send requests to your backend however you like
+store access token and username somewhere.
