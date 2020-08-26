@@ -377,3 +377,17 @@ Benefits of Digging Deep
   - by making it formalized rules, we reap the befenits of externalizing (refer to post)
   - narrow scope of data
   - one meaning per word
+  
+  
+  
+  
+  
+Similarities between Generative algorithms and tdd.
+Original thought: can't work with code because any small change to code will break it.
+Then saw 'an hour with uncle bob' where he does TDD prime factorization.
+He said: now, at some point I did a change; it worked, and don't know why.
+same feeling / effect as generative algorithms!
+So my original thought can be 'fixed' by saying the steps should be larger.
+Difference with generative algorithms is that currently we can't automate these steps yet, require too much human intelligence.
+If we ever get AI to a point where they can do TDD, we are a step closer to automating software.
+Interesting(?)
