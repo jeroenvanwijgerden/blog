@@ -203,7 +203,14 @@ The Blade Itself
 
 
 
+
+
 Musing on Communication
+data vs information
+general model of communication
+... sender, signal, recipient, noise too high level already, need something more basic.
+
+
 
 
 
@@ -310,7 +317,7 @@ pretty much an AST. Perhaps same issue: mathematical notation is too convenient 
 
 
 
-
+Schools: Reloaded
 
 more on the basic subjects... language already specialized. Communication more general.
 Also, English really that important, billingual education only full measure. How to balance though with preserving our native language and thus our native way of thinking / perspective?
@@ -320,6 +327,8 @@ Ground layer:
     - self awareness (who are you, what do you want, what makes you happy
     - critical thinking, realism, humility, confidence, acceptance
     - self care: healthy mind, body and soul.
+      - more time between periods of sitting and paying attention, to move and unwind. 50, 25. Mind learns in rest. 25 minutes are not wasted.
+        - what would schedule look like? Let's say start at 8.00, 9.15, 10.30, 11.45, 13.00, 14.15, 15.30 ends at 16.45. That's 7 slots a day! Let's say only in later years (15+?) you can be assigned the last slot. 
     - learning / deliberate practise!
   - external:
     - Communication
@@ -331,6 +340,16 @@ Ground layer:
 
 Already more specific: Languages: Native language (e.g. Dutch), General language (English), Mathematics, programming (for future academic-likes).
 Although you might not like it, good to have a broad frame of reference. No need to become expert in many subjects, but to know a little gives you more worldly nodes to connect to.
+
+General though here is that Dutch people get much more done in the same time. Flexibility, 'meedenken', being reasonable.
+
+
+
+
+
+
+What if we would all learn sign language?
+
 
 
 
