@@ -15,6 +15,16 @@ Why does it matter though?
 
 
 
+Algebra: visualizing structure
+exercises (boxes, colors)
+AST
+a 'rewriter' of any formula,
+given some axioms, gives list of all versions.
+somehow bind this, could grow infinitely.
+somehow order results by favoritism, give some heuristics.
+
+
+
 
 
 overcoming the imperative-declarative ambuiguity of English
